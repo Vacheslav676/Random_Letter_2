@@ -12,7 +12,7 @@
         android:layout_width="133dp"
         android:layout_height="49dp"
         android:layout_marginBottom="132dp"
-        android:text="Sport"
+        android:text="@string/Sport"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

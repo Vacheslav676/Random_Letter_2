@@ -17,14 +17,14 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="skill speed" />
+            android:text="@string/skill_speed" />
 
         <Button
             android:id="@+id/words_in_20_seconds_button"
             android:layout_width="wrap_content"
             android:layout_height="49dp"
             android:layout_marginBottom="132dp"
-            android:text="20 words in 20 seconds"
+            android:text="@string/words_in_20_seconds"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -34,7 +34,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="skill of fiction" />
+            android:text="@string/skill_of_fiction" />
 
         <Button
             android:id="@+id/category_2_letters_button"
