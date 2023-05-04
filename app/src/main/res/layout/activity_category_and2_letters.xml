@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
         android:navigationBarColor="@android:color/white"
         android:orientation="vertical"
         android:gravity="center"
