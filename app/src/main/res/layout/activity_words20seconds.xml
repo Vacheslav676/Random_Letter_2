@@ -33,8 +33,7 @@
             android:layout_marginBottom="46dp"
             android:onClick="submitOrder"
             android:text="Сменить букву"
-            android:textSize="18sp"
-            app:backgroundTint="@color/teal_200" />
+            android:textSize="18sp"/>
 
 
         <TextView
@@ -49,19 +48,16 @@
             android:layout_marginBottom="46dp"
             android:onClick="submitOrder2"
             android:text="Сменить тип"
-            android:textSize="18sp"
-            app:backgroundTint="@color/teal_200" />
+            android:textSize="18sp"/>
 
 
         <EditText
             android:id="@+id/txtSeconds"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:ems="10"
             android:inputType="numberDecimal"
             android:text="60"
-            android:textColor="@color/black"
             android:textSize="36sp" />
 
         <Button

@@ -42,13 +42,11 @@
 
         <EditText
             android:id="@+id/txtSeconds"
-            android:layout_width="40dp"
+            android:layout_width="76dp"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:ems="10"
             android:inputType="numberDecimal"
             android:text="60"
-            android:textColor="@color/black"
             android:textSize="36sp" />
 
         <Button
