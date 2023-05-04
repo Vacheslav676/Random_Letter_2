@@ -18,31 +18,13 @@
 
         <TextView
             android:id="@+id/title1_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@color/white"
-            android:text="Скилл скорость"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            style="@style/textSredniyZagolovok"
+            android:text="Скилл скорость"/>
 
         <TextView
             android:id="@+id/letter_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@color/white"
-            android:text="Случайная буква"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            style="@style/textMiniZagolovok"
+            android:text="Случайная буква"/>
 
         <Button
             android:id="@+id/button1"
@@ -57,17 +39,8 @@
 
         <TextView
             android:id="@+id/type1_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@color/white"
-            android:text="Случайный тип"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            style="@style/textMiniZagolovok"
+            android:text="Случайный тип"/>
 
         <Button
             android:id="@+id/button2"

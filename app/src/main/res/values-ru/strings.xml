@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Скилл скорость и выдумка</string>
+    <string name="Sport">Спорт</string>
+    <string name="skill_speed">скилл скорость</string>
+    <string name="words_in_20_seconds">20 слов за 20 секунд</string>
+    <string name="skill_of_fiction">скилл выдумка</string>
+    <string name="letter" translatable="false">Буква</string>
+</resources>

@@ -6,4 +6,8 @@
     <string name="words_in_20_seconds">20 words in 20 seconds</string>
     <string name="skill_of_fiction">skill of fiction</string>
 
+    <!-- А это слово из джава кода -->
+    <string name="letter">letter</string>
+
+
 </resources>

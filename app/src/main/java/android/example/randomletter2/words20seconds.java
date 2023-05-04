@@ -100,7 +100,7 @@ public class words20seconds extends AppCompatActivity {
     // Этот метод Заполняет окно рандомной буквы
     private void display(String AAA) {
         TextView quantityTextView = (TextView) findViewById(R.id.letter_text_view);
-        quantityTextView.setText("Буква " + AAA);
+        quantityTextView.setText(getString(R.string.letter)+ " " + AAA);
     }
 
 
