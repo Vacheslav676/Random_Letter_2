@@ -18,17 +18,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:navigationBarColor="@android:color/white"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="118dp">
 
             <TextView
                 android:id="@+id/type2_text_view"
-                android:text="11111"
-                style="@style/textMiniZagolovok"
-                />
+                style="@style/textTimer"
+                android:text="60"
+                android:textSize="90dp"/>
 
 
         </LinearLayout>
@@ -36,17 +38,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
             android:navigationBarColor="@android:color/white"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
+            android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="118dp">
 
-            <TextView
-                android:id="@+id/type2_text_view2"
-                android:text="22222"
-                style="@style/textMiniZagolovok"
-                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/simpleButtonTimer20"
+                style="@style/simpleButtonTimer"
+                android:layout_height="100dp"
+                android:text="20"
+                app:cornerRadius="60dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/simpleButtonTimer60"
+                style="@style/simpleButtonTimer"
+                android:text="60"
+                app:cornerRadius="60dp" />
 
 
         </LinearLayout>
@@ -54,23 +66,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
             android:navigationBarColor="@android:color/white"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="118dp">
 
-            <TextView
-                android:id="@+id/type2_text_view3"
-                android:text="Две буквы и тип (1 мин)"
-                style="@style/textMiniZagolovok"
-                />
-
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="60dp"
+                style="@style/simpleButton"
+                android:text="@string/Start"/>
 
         </LinearLayout>
-
-
-
 
 
     </LinearLayout>
