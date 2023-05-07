@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MyTimer">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:navigationBarColor="@android:color/white"
@@ -15,28 +15,64 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="118dp">
 
-        <ImageView
-            android:id="@+id/my_timer_view"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            app:srcCompat="@drawable/circle_without_background"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="267dp" />
+            android:navigationBarColor="@android:color/white"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="118dp">
 
-        <Button
-            android:id="@+id/MyTimer_button"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/type2_text_view"
+                android:text="11111"
+                style="@style/textMiniZagolovok"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/my_timer_view"
-            android:layout_alignBottom="@+id/my_timer_view"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="53dp"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:text="60"
-            android:textSize="100dp" />
+            android:navigationBarColor="@android:color/white"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="118dp">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/type2_text_view2"
+                android:text="22222"
+                style="@style/textMiniZagolovok"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:navigationBarColor="@android:color/white"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="118dp">
+
+            <TextView
+                android:id="@+id/type2_text_view3"
+                android:text="Две буквы и тип (1 мин)"
+                style="@style/textMiniZagolovok"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

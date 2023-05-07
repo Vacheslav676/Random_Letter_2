@@ -36,7 +36,8 @@
         android:text="@string/switch_themes"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="245dp" />
+        tools:layout_editor_absoluteX="245dp"
+        />
 
     <ImageView
         android:id="@+id/imageView"

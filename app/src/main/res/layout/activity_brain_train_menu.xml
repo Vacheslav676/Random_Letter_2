@@ -11,9 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/radius"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -26,8 +28,8 @@
 
         <Button
             android:id="@+id/words_in_20_seconds_button"
-            android:text="@string/words_in_20_seconds"
-            style="@style/simpleButton"/>
+            style="@style/simpleButton"
+            android:text="@string/words_in_20_seconds" />
 
         <TextView
             android:id="@+id/textView4"
@@ -36,8 +38,8 @@
 
         <Button
             android:id="@+id/category_2_letters_button"
-            android:text="@string/category_and_2_letters"
-            style="@style/simpleButton"/>
+            style="@style/simpleButton"
+            android:text="@string/category_and_2_letters" />
 
         <TextView
             android:id="@+id/textView5"
@@ -46,8 +48,8 @@
 
         <Button
             android:id="@+id/acting_skills_button"
-            android:text="@string/random_character"
-            style="@style/simpleButton"/>
+            style="@style/simpleButton"
+            android:text="@string/random_character" />
 
         <TextView
             android:id="@+id/textView6"
@@ -56,8 +58,9 @@
 
         <Button
             android:id="@+id/switching_to_my_timer_button"
-            android:text="@string/Timer"
-            style="@style/simpleButton"/>
+            style="@style/simpleButton"
+            android:text="@string/Timer" />
+
 
     </LinearLayout>
 
