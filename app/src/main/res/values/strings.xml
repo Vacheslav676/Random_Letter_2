@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Random Letter 2</string>
+    <string name="app_name">3 skills</string>
     <string name="Sport">Sport</string>
     <string name="skill_speed">skill speed</string>
     <string name="words_in_20_seconds">20 words in 20 seconds</string>
@@ -12,6 +12,7 @@
     <string name="Brain_train">Brain train</string>
     <string name="category_and_2_letters">category and 2 letters</string>
     <string name="Start">Start</string>
+    <string name="Timer">Timer</string>
     />
 
 

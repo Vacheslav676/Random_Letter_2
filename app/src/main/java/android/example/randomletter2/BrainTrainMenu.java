@@ -14,7 +14,7 @@ public class BrainTrainMenu extends AppCompatActivity implements View.OnClickLis
     Button words20SecondsButton;
     Button category2Letters;
     Button randomCharacter;
-    ImageView myTimer;
+    Button switchingToMyTimer;
 
 
     @Override
@@ -25,13 +25,12 @@ public class BrainTrainMenu extends AppCompatActivity implements View.OnClickLis
         words20SecondsButton = (Button) findViewById(R.id.words_in_20_seconds_button);
         category2Letters = (Button) findViewById(R.id.category_2_letters_button);
         randomCharacter = (Button) findViewById(R.id.acting_skills_button);
-        myTimer = (ImageView) findViewById(R.id.my_timer_view);
+        switchingToMyTimer = (Button) findViewById(R.id.switching_to_my_timer_button);
 
         words20SecondsButton.setOnClickListener(this);
         category2Letters.setOnClickListener(this);
         randomCharacter.setOnClickListener(this);
-        myTimer.setOnClickListener(this);
-
+        switchingToMyTimer.setOnClickListener(this);
 
 
     }
@@ -54,6 +53,11 @@ public class BrainTrainMenu extends AppCompatActivity implements View.OnClickLis
             case R.id.acting_skills_button:
                 intent = new Intent(BrainTrainMenu.this, ActingSkills.class);
 
+                startActivity(intent);
+                break;
+
+            case R.id.switching_to_my_timer_button:
+                intent = new Intent(BrainTrainMenu.this, MyTimer.class);
                 startActivity(intent);
                 break;
 

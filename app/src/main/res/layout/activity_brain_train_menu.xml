@@ -7,6 +7,12 @@
     tools:context=".BrainTrainMenu">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,10 +49,19 @@
             android:text="@string/random_character"
             style="@style/simpleButton"/>
 
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/textMiniZagolovok"
+            android:text="@string/Timer" />
 
-
+        <Button
+            android:id="@+id/switching_to_my_timer_button"
+            android:text="@string/Timer"
+            style="@style/simpleButton"/>
 
     </LinearLayout>
+
+
 
 
 

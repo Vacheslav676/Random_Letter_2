@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Скилл скорость и выдумка</string>
+    <string name="app_name">3 скилла</string>
     <string name="Sport">Спорт</string>
     <string name="skill_speed">Скилл скорость</string>
     <string name="words_in_20_seconds">20 слов за 20 секунд</string>
@@ -13,4 +13,5 @@
     <string name="Brain_train">Тренировка мозга</string>
     <string name="category_and_2_letters">категория и две буквы</string>
     <string name="Start">Старт</string>
+    <string name="Timer">Таймер</string>
 </resources>
