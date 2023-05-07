@@ -26,9 +26,10 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="118dp">
 
-            <TextView
-                android:id="@+id/type2_text_view"
+            <EditText
+                android:id="@+id/text_seconds_timer"
                 style="@style/textTimer"
+                android:inputType="numberDecimal"
                 android:text="60"
                 android:textSize="90dp"/>
 
@@ -48,14 +49,14 @@
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/simpleButtonTimer20"
+                android:id="@+id/button_20_timer"
                 style="@style/simpleButtonTimer"
                 android:layout_height="100dp"
                 android:text="20"
                 app:cornerRadius="60dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/simpleButtonTimer60"
+                android:id="@+id/button_60_Timer"
                 style="@style/simpleButtonTimer"
                 android:text="60"
                 app:cornerRadius="60dp" />
@@ -75,9 +76,11 @@
             tools:layout_editor_absoluteY="118dp">
 
             <com.google.android.material.button.MaterialButton
-                app:cornerRadius="60dp"
+                android:id="@+id/button_start_timer"
                 style="@style/simpleButton"
-                android:text="@string/Start"/>
+                android:layout_width="167dp"
+                android:text="@string/Start"
+                app:cornerRadius="60dp" />
 
         </LinearLayout>
 
