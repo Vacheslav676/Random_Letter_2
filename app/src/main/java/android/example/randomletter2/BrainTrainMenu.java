@@ -2,16 +2,19 @@ package android.example.randomletter2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class BrainTrainMenu extends AppCompatActivity implements View.OnClickListener {
 
     Button words20SecondsButton;
     Button category2Letters;
     Button randomCharacter;
+    ImageView myTimer;
 
 
     @Override
@@ -22,10 +25,12 @@ public class BrainTrainMenu extends AppCompatActivity implements View.OnClickLis
         words20SecondsButton = (Button) findViewById(R.id.words_in_20_seconds_button);
         category2Letters = (Button) findViewById(R.id.category_2_letters_button);
         randomCharacter = (Button) findViewById(R.id.acting_skills_button);
+        myTimer = (ImageView) findViewById(R.id.my_timer_view);
 
         words20SecondsButton.setOnClickListener(this);
         category2Letters.setOnClickListener(this);
         randomCharacter.setOnClickListener(this);
+        myTimer.setOnClickListener(this);
 
 
 
