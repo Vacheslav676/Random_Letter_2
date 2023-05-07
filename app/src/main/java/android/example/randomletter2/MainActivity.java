@@ -1,6 +1,7 @@
 package android.example.randomletter2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
            SportButtonMenu.setOnClickListener(this);
            BrainTrainButtonMenu.setOnClickListener(this);
+           // Меняем тему темная/светлая
+           // AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
+
+
 
        }
 
@@ -52,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 startActivity(intent);
                 break;
+
+
         }
 
     }

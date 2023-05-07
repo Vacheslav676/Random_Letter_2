@@ -8,6 +8,18 @@
 
 
     <Button
+        android:id="@+id/themesChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="themesChange"
+        android:layout_marginBottom="636dp"
+        android:text="Themes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/sport_button_menu"
         android:layout_width="133dp"
         android:layout_height="49dp"
