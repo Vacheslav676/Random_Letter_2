@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">Random Letter 2</string>
-
     <string name="Sport">Sport</string>
     <string name="skill_speed">skill speed</string>
     <string name="words_in_20_seconds">20 words in 20 seconds</string>
     <string name="skill_of_fiction">skill of fiction</string>
-
-    <!-- А это слово из джава кода -->
     <string name="letter">letter</string>
+    <string name="acting_skills">acting skills</string>
+    <string name="character">character</string>
+    <string name="random_character">random character</string>
+    <string name="switch_themes">switch themes</string>
+    <string name="Brain_train">Brain train</string>
+    <string name="category_and_2_letters">category and 2 letters</string>
+    <string name="Start">Start</string>
+    />
 
 
 </resources>

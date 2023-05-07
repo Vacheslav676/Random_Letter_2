@@ -2,8 +2,15 @@
 <resources>
     <string name="app_name">Скилл скорость и выдумка</string>
     <string name="Sport">Спорт</string>
-    <string name="skill_speed">скилл скорость</string>
+    <string name="skill_speed">Скилл скорость</string>
     <string name="words_in_20_seconds">20 слов за 20 секунд</string>
     <string name="skill_of_fiction">скилл выдумка</string>
     <string name="letter" translatable="false">Буква</string>
+    <string name="acting_skills">Скилл актерское мастерство</string>
+    <string name="character">персонаж</string>
+    <string name="random_character">случайный персонаж</string>
+    <string name="switch_themes">переключить тему</string>
+    <string name="Brain_train">Тренировка мозга</string>
+    <string name="category_and_2_letters">категория и две буквы</string>
+    <string name="Start">Старт</string>
 </resources>

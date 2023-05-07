@@ -31,21 +31,19 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="46dp"
             android:onClick="submitOrder3"
             android:text="Сменить тип"
-            android:textSize="18sp"/>
+            style="@style/simpleButton"/>
 
 
         <EditText
             android:id="@+id/txtSeconds"
-            android:layout_width="76dp"
+            android:layout_width="242dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
             android:text="60"
+            android:gravity="center"
             android:textSize="36sp" />
 
         <Button

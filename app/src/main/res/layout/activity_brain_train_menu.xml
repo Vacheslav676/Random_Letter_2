@@ -20,14 +20,8 @@
 
         <Button
             android:id="@+id/words_in_20_seconds_button"
-            android:layout_width="wrap_content"
-            android:layout_height="49dp"
-            android:layout_marginBottom="132dp"
             android:text="@string/words_in_20_seconds"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            style="@style/simpleButton"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -36,14 +30,18 @@
 
         <Button
             android:id="@+id/category_2_letters_button"
-            android:layout_width="wrap_content"
-            android:layout_height="49dp"
-            android:layout_marginBottom="50dp"
-            android:text="category and 2 letters"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:text="@string/category_and_2_letters"
+            style="@style/simpleButton"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/textMiniZagolovok"
+            android:text="@string/acting_skills" />
+
+        <Button
+            android:id="@+id/acting_skills_button"
+            android:text="@string/random_character"
+            style="@style/simpleButton"/>
 
 
 
