@@ -52,13 +52,13 @@
                 android:id="@+id/button_20_timer"
                 style="@style/simpleButtonTimer"
                 android:layout_height="100dp"
-                android:text="20"
+                android:text="00:00:20"
                 app:cornerRadius="60dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_60_Timer"
                 style="@style/simpleButtonTimer"
-                android:text="60"
+                android:text="00:00:60"
                 app:cornerRadius="60dp" />
 
 

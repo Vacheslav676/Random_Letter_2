@@ -71,12 +71,9 @@ public class words20seconds extends AppCompatActivity {
                     @Override
                     public void onFinish() {
                         // Когда у нас будет завершение мы обратимся к похожей команде
-                        txtSeconds.setText("Время вышло");
-
+                        txtSeconds.setText("Стоп");
                     }
-                    // После следующей кнопки добавь точку с запетой, автоматом она не добавится
                 };
-
                 // НО Нужно запустить таймер:
                 myTimer.start();
             }
