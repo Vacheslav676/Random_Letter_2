@@ -19,7 +19,7 @@ public class MyTimer extends AppCompatActivity {
         Button button60Sec = (Button) findViewById(R.id.button_60_Timer);
         Button buttonStartTimer = (Button) findViewById(R.id.button_start_timer);
 
-            View.OnClickListener onClick = new View.OnClickListener() {
+            View.OnClickListener oneClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -37,10 +37,43 @@ public class MyTimer extends AppCompatActivity {
                 };
                 myTimer.start();
             }
+
         };
-        // кнопке старт вписываем метод-обработчик
-        buttonStartTimer.setOnClickListener(onClick);
+        // вписываем кнопкам методы-обработчики
+        buttonStartTimer.setOnClickListener(oneClick);
+//
+//        button20Sec.setOnClickListener(oneClick);
+//        button60Sec.setOnClickListener(oneClick);
+
+
+
     }
+
+    // Этот метод вызывается при нажатии кнопки20.
+    public void submitOrder3(View view) {
+        String type24 = "20";
+        display3(String.valueOf(type24));
+    }
+    // Этот метод Заполняет окно
+    public void display3(String CCC) {
+        TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
+        txtSec.setText("20");
+    }
+
+
+    // Этот метод вызывается при нажатии кнопки60.
+    public void submitOrder4(View view) {
+        String type25 = "60";
+        display4(String.valueOf(type25));
+    }
+    // Этот метод Заполняет окно
+    public void display4(String CCC) {
+        TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
+        txtSec.setText("60");
+    }
+
+
+
 
 
 }
