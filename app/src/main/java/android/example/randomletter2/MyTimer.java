@@ -37,16 +37,9 @@ public class MyTimer extends AppCompatActivity {
                 };
                 myTimer.start();
             }
-
         };
         // вписываем кнопкам методы-обработчики
         buttonStartTimer.setOnClickListener(oneClick);
-//
-//        button20Sec.setOnClickListener(oneClick);
-//        button60Sec.setOnClickListener(oneClick);
-
-
-
     }
 
     // Этот метод вызывается при нажатии кнопки20.
@@ -56,8 +49,8 @@ public class MyTimer extends AppCompatActivity {
     }
     // Этот метод Заполняет окно
     public void display3(String CCC) {
-        TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
-        txtSec.setText(CCC);
+        TextView txtSec2 = (TextView) findViewById(R.id.text_seconds_timer);
+        txtSec2.setText(CCC);
     }
 
 
@@ -68,8 +61,8 @@ public class MyTimer extends AppCompatActivity {
     }
     // Этот метод Заполняет окно
     public void display4(String CCC) {
-        TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
-        txtSec.setText(CCC);
+        TextView txtSec1 = (TextView) findViewById(R.id.text_seconds_timer);
+        txtSec1.setText(CCC);
     }
 
 
