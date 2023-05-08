@@ -57,7 +57,7 @@ public class MyTimer extends AppCompatActivity {
     // Этот метод Заполняет окно
     public void display3(String CCC) {
         TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
-        txtSec.setText("20");
+        txtSec.setText(CCC);
     }
 
 
@@ -69,7 +69,7 @@ public class MyTimer extends AppCompatActivity {
     // Этот метод Заполняет окно
     public void display4(String CCC) {
         TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
-        txtSec.setText("60");
+        txtSec.setText(CCC);
     }
 
 
