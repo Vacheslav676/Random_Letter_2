@@ -18,7 +18,7 @@ public class MyTimer extends AppCompatActivity {
         Button button20Sec = (Button) findViewById(R.id.button_20_timer);
         Button button60Sec = (Button) findViewById(R.id.button_60_Timer);
         Button buttonStartTimer = (Button) findViewById(R.id.button_start_timer);
-        Button buttonStopTimer = (Button) findViewById(R.id.button_stop_timer);
+        Button buttonPauseTimer = (Button) findViewById(R.id.button_pause_timer);
         Button buttonResetTimer = (Button) findViewById(R.id.button_reset_timer);
 
             View.OnClickListener oneClick = new View.OnClickListener() {
@@ -26,24 +26,39 @@ public class MyTimer extends AppCompatActivity {
             public void onClick(View v) {
 
                 long seconds = Long.parseLong(txtSec.getText().toString());
-                //инициализация таймера
+
+                // Инициализация таймера
                 CountDownTimer myTimer = new CountDownTimer(seconds * 1000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        txtSec.setText(Long.toString(millisUntilFinished / 1000));
+
                         // обновление текста на экране (отображение в секундах а не милисекндах)
+                        txtSec.setText(Long.toString(millisUntilFinished / 1000));
                     }
+
                     @Override
                     public void onFinish() {
+                        // Выполнение действий по завершении таймера
                         txtSec.setText("Всё.");
                     }
+
+
+
+
                 };
                 myTimer.start();
             }
         };
-        // вписываем кнопкам методы-обработчики
+        // вписываем кнопкам методы-обработчики кнопки старт
         buttonStartTimer.setOnClickListener(oneClick);
+
+
+
     }
+
+
+
+
 
     // Этот метод вызывается при нажатии кнопки20.
     public void submitOrder3(View view) {

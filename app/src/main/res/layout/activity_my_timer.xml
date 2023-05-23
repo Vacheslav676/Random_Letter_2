@@ -86,10 +86,10 @@
                 app:cornerRadius="60dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/button_stop_timer"
+                android:id="@+id/button_pause_timer"
                 style="@style/simpleButton"
                 android:layout_width="167dp"
-                android:text="@string/Stop"
+                android:text="@string/Pause"
                 app:cornerRadius="60dp" />
 
             <com.google.android.material.button.MaterialButton
