@@ -14,4 +14,6 @@
     <string name="category_and_2_letters">категория и две буквы</string>
     <string name="Start">Старт</string>
     <string name="Timer">Таймер</string>
+    <string name="Reset">Сбросить</string>
+    <string name="Stop">Стоп</string>
 </resources>
