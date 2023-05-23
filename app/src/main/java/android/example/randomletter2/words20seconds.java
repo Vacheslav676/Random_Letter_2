@@ -2,6 +2,7 @@ package android.example.randomletter2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -21,6 +22,70 @@ public class words20seconds extends AppCompatActivity {
     // 10 букв в массиве
     int twoLength = type1.length;
 
+    Button startToTimer = (Button) findViewById(R.id.buttonStart);
+
+    Intent untent;
+
+    public void startToTimer(View v) {
+        intent = new Intent(words20seconds.this, MyTimer.class);
+        startActivity(intent);
+
+    }
+
+    // Делаем таймер
+
+    //Создаем переменную и привязываем ее к текст вью
+    // Внимание!: тут название переменной и название текствью совпадают
+    TextView txtSeconds = (TextView) findViewById(R.id.txtSeconds);
+    //И по аналогии создаем переменную и привязываем кнопку-вью
+    Button btnStart = (Button) findViewById(R.id.buttonStart);
+
+
+    // Создаем слушателя кнопки, или обработчик события
+    View.OnClickListener oclbtnStart = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            // Создадим переменную что бы задавать длину таймера считанную из текстового поля
+            // но нужно преобразовать из текста в число из текст вью txtSeconds
+            long seconds = Long.parseLong(txtSeconds.getText().toString());
+
+
+            // Тут Создаем таймер
+
+            // В скобочках задаем два параметра, от скольки мы скитаем
+            // и через сколько. От 10000(переменная seconds) милисекунд, и через 1000
+            // то есть грубо говоря вниз от 10 до 0 секунд через одну секунду
+            // умножить на 1000 потомучто 1000 милисекунд в одной секунде
+            CountDownTimer myTimer = new CountDownTimer(seconds * 1000, 1000) {
+                @Override
+                // millisUntilFinished - переменная отображающая оставшееся количесво секунд до конца
+                // тип переменной лонг
+                public void onTick(long millisUntilFinished) {
+                    //надо тип лонг перевести в текстовое поле
+                    // делим на 1000 потому что что бы видеть не милисекунды а секунды
+                    txtSeconds.setText(Long.toString(millisUntilFinished / 1000));
+
+                }
+
+                @Override
+                public void onFinish() {
+                    // Когда у нас будет завершение мы обратимся к похожей команде
+                    txtSeconds.setText("Стоп");
+                }
+            };
+            // НО Нужно запустить таймер:
+            myTimer.start();
+        }
+    };
+
+    // После создания слушателя мы обращаемся к нашей кнопке бтнСтарт
+    // И в скобки вписываем метод который мы хотим получить в качестве обработчика
+        btnStart.setOnClickListener(oclbtnStart);
+
+}
+
+
 
 
 
@@ -28,61 +93,6 @@ public class words20seconds extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_words20seconds);
-
-
-        // Делаем таймер
-
-        //Создаем переменную и привязываем ее к текст вью
-        // Внимание!: тут название переменной и название текствью совпадают
-        TextView txtSeconds = (TextView) findViewById(R.id.txtSeconds);
-        //И по аналогии создаем переменную и привязываем кнопку-вью
-        Button btnStart = (Button) findViewById(R.id.buttonStart);
-
-
-
-        // Создаем слушателя кнопки, или обработчик события
-        View.OnClickListener oclbtnStart = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // Создадим переменную что бы задавать длину таймера считанную из текстового поля
-                // но нужно преобразовать из текста в число из текст вью txtSeconds
-                long seconds = Long.parseLong(txtSeconds.getText().toString());
-
-
-                // Тут Создаем таймер
-
-                // В скобочках задаем два параметра, от скольки мы скитаем
-                // и через сколько. От 10000(переменная seconds) милисекунд, и через 1000
-                // то есть грубо говоря вниз от 10 до 0 секунд через одну секунду
-                // умножить на 1000 потомучто 1000 милисекунд в одной секунде
-                CountDownTimer myTimer = new CountDownTimer(seconds*1000, 1000)
-                {
-                    @Override
-                    // millisUntilFinished - переменная отображающая оставшееся количесво секунд до конца
-                    // тип переменной лонг
-                    public void onTick(long millisUntilFinished) {
-                        //надо тип лонг перевести в текстовое поле
-                        // делим на 1000 потому что что бы видеть не милисекунды а секунды
-                        txtSeconds.setText(Long.toString(millisUntilFinished/1000));
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        // Когда у нас будет завершение мы обратимся к похожей команде
-                        txtSeconds.setText("Стоп");
-                    }
-                };
-                // НО Нужно запустить таймер:
-                myTimer.start();
-            }
-        };
-
-        // После создания слушателя мы обращаемся к нашей кнопке бтнСтарт
-        // И в скобки вписываем метод который мы хотим получить в качестве обработчика
-        btnStart.setOnClickListener(oclbtnStart);
-
 
     }
 
@@ -99,9 +109,6 @@ public class words20seconds extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.letter_text_view);
         quantityTextView.setText(getString(R.string.letter)+ " " + AAA);
     }
-
-
-
 
     // Этот метод вызывается при нажатии кнопки2.
     public void submitOrder2(View view) {

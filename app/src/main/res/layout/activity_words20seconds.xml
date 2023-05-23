@@ -45,18 +45,11 @@
             android:text="Сменить тип"/>
 
 
-        <EditText
-            android:id="@+id/txtSeconds"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:text="60"
-            android:textSize="36sp" />
-
         <Button
             android:id="@+id/buttonStart"
-            style="@style/simpleButton"            android:text="Start"
+            style="@style/simpleButton"
+            android:onClick="startToTimer"
+            android:text="Start"
             tools:visibility="visible" />
 
 
