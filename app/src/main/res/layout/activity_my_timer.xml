@@ -29,7 +29,7 @@
             <EditText
                 android:id="@+id/text_seconds_timer"
                 style="@style/textTimer"
-                android:layout_width="213dp"
+                android:layout_width="375dp"
                 android:inputType="numberDecimal"
                 android:text="60"
                 android:textSize="90dp" />

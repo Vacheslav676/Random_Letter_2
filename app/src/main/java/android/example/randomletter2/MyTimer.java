@@ -14,6 +14,9 @@ public class MyTimer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_timer);
 
+
+
+
         TextView txtSec = (TextView) findViewById(R.id.text_seconds_timer);
         Button button20Sec = (Button) findViewById(R.id.button_20_timer);
         Button button60Sec = (Button) findViewById(R.id.button_60_Timer);
@@ -21,14 +24,13 @@ public class MyTimer extends AppCompatActivity {
         Button buttonPauseTimer = (Button) findViewById(R.id.button_pause_timer);
         Button buttonResetTimer = (Button) findViewById(R.id.button_reset_timer);
 
-            View.OnClickListener oneClick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+
 
                 long seconds = Long.parseLong(txtSec.getText().toString());
 
                 // Инициализация таймера
-                CountDownTimer myTimer = new CountDownTimer(seconds * 1000, 1000) {
+                CountDownTimer countDownTimer = new CountDownTimer(seconds * 1000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
 
@@ -43,14 +45,34 @@ public class MyTimer extends AppCompatActivity {
                     }
 
 
-
-
                 };
-                myTimer.start();
+
+
+        // Обработка нажатия на кнопку старта
+        buttonStartTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countDownTimer.start(); // Запуск таймера
             }
-        };
-        // вписываем кнопкам методы-обработчики кнопки старт
-        buttonStartTimer.setOnClickListener(oneClick);
+        });
+
+// Обработка нажатия на кнопку паузы
+        buttonPauseTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countDownTimer.cancel(); // Остановка таймера
+            }
+        });
+
+        // Обработка нажатия на кнопку стоп
+        buttonResetTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countDownTimer.cancel(); // Остановка таймера
+                txtSec.setText("Заново"); // Обновление текста на экране
+            }
+        });
+
 
 
 
