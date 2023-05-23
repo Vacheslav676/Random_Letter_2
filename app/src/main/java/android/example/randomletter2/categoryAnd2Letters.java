@@ -1,6 +1,8 @@
 package android.example.randomletter2;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -24,34 +26,15 @@ public class categoryAnd2Letters extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_and2_letters);
+        Button startToTimer = (Button) findViewById(R.id.buttonStart);
 
-        TextView txtSeconds = (TextView) findViewById(R.id.txtSeconds);
-        Button btnStart = (Button) findViewById(R.id.buttonStart);
+    }
 
-        View.OnClickListener oclbtnStart = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    public void startToTimer (View v) {
+        Intent intent;
+        intent = new Intent(categoryAnd2Letters.this, MyTimer.class);
+        startActivity(intent);
 
-                long seconds = Long.parseLong(txtSeconds.getText().toString());
-
-                CountDownTimer myTimer = new CountDownTimer(seconds*1000, 1000)
-                {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        //надо тип лонг перевести в текстовое поле
-                        // делим на 1000 потому что что бы видеть не милисекунды а секунды
-                        txtSeconds.setText(Long.toString(millisUntilFinished/1000));
-
-                    }
-                    @Override
-                    public void onFinish() {
-                        txtSeconds.setText("Время вышло");
-                    }
-                };
-                myTimer.start();
-            }
-        };
-        btnStart.setOnClickListener(oclbtnStart);
     }
 
     //==================================================================

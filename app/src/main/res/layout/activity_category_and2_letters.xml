@@ -36,21 +36,14 @@
             style="@style/simpleButton"/>
 
 
-        <EditText
-            android:id="@+id/txtSeconds"
-            android:layout_width="242dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:text="60"
-            android:gravity="center"
-            android:textSize="36sp" />
+
 
         <Button
             android:id="@+id/buttonStart"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Start"
+            android:onClick="startToTimer"
             tools:visibility="visible" />
 
 
