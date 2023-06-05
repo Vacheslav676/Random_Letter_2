@@ -16,5 +16,6 @@
     <string name="Timer">Таймер</string>
     <string name="Reset">Сбросить</string>
     <string name="Pause">Пауза</string>
+    <string name="Resume">Возобновить</string>
     <string name="Stop">Стоп</string>
 </resources>
